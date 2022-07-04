@@ -14,15 +14,15 @@ namespace basicsOfProgramming
             int maxNumber = 100;
             int minNumber = 0;
             int number = random.Next(minNumber, maxNumber);
-            int multiplicity3 = 3;
-            int multiplicity5 = 5;
+            int multiplicity1 = 3;
+            int multiplicity2 = 5;
             int total = 0;
 
             Console.WriteLine("Сгенерированное число - " + number);
             
             for (int i = 0; i <= number; i++)
             {
-                if (i % multiplicity3 == 0 || i % multiplicity5 == 0) 
+                if (i % multiplicity1 == 0 || i % multiplicity2 == 0) 
                     total += i;
             }
 
