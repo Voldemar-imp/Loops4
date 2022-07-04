@@ -16,7 +16,7 @@ namespace basicsOfProgramming
 
             Console.WriteLine("Сгенерированное число - " + number);
 
-            for (int i = 0; i < number; i++)
+            for (int i = 0; i <= number; i++)
             {
                 if (i % 3 == 0)
                     total += i;
