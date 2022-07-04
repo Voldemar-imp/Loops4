@@ -10,7 +10,7 @@ namespace basicsOfProgramming
     {
         static void Main(string[] args)
         {
- Random random = new Random();
+            Random random = new Random();
             int maxNumber = 100;
             int minNumber = 0;
             int number = random.Next(minNumber, maxNumber);
