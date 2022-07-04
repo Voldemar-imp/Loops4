@@ -11,22 +11,23 @@ namespace basicsOfProgramming
         static void Main(string[] args)
         {
             Random random = new Random();
-            int number = random.Next(0, 100);
+            int maxNumber = 100;
+            int minNumber = 0;
+            int number = random.Next(minNumber, maxNumber);
+            int multiplicity3 = 3;
+            int multiplicity5 = 5;
             int total = 0;
 
             Console.WriteLine("Сгенерированное число - " + number);
-
+            
             for (int i = 0; i <= number; i++)
             {
-                if (i % 3 == 0)
-                    total += i;
-
-                if (i % 5 == 0)
+                if (i % multiplicity3 == 0 || i % multiplicity5 == 0) 
                     total += i;
             }
 
-            Console.WriteLine("Сумма всех положительных чисел меньше либо равных " +
-                "сгенерированному, которые кратны 3 или 5 = " + total);
+            Console.WriteLine("Сумма всех положительных чисел меньше " +
+                "сгенерированного, которые кратны 3 или 5 = " + total);
         }
     }
 }
