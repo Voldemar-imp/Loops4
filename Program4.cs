@@ -11,7 +11,7 @@ namespace basicsOfProgramming
         static void Main(string[] args)
         {
             Random random = new Random();
-            int number = random.Next(0, 101);
+            int number = random.Next(0, 100);
             int total = 0;
 
             Console.WriteLine("Сгенерированное число - " + number);
